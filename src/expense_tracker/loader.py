@@ -37,6 +37,18 @@ def parse_amount(value) -> float:
     return -abs(number) if negative else number
 
 
+def parse_dates(values: pd.Series) -> pd.Series:
+    """Parse ISO dates (YYYY-MM-DD) strictly, and everything else day-first (14/09/2026)."""
+    text = values.astype(str).str.strip()
+    parsed = pd.to_datetime(text, format="%Y-%m-%d", errors="coerce")
+    rest = parsed.isna()
+    if rest.any():
+        parsed[rest] = pd.to_datetime(
+            text[rest], format="mixed", dayfirst=True, errors="coerce"
+        )
+    return parsed
+
+
 def clean_transactions(raw: pd.DataFrame) -> pd.DataFrame:
     """Normalize dates, amounts and merchant names; drop bad rows and duplicates."""
     df = raw.copy()
@@ -48,7 +60,7 @@ def clean_transactions(raw: pd.DataFrame) -> pd.DataFrame:
     if "account" not in df.columns:
         df["account"] = "Unknown"
 
-    df["date"] = pd.to_datetime(df["date"], format="mixed", dayfirst=True, errors="coerce")
+    df["date"] = parse_dates(df["date"])
     df["amount"] = df["amount"].map(parse_amount)
     df["description"] = df["description"].map(normalize_merchant)
     df["account"] = df["account"].fillna("Unknown").astype(str).str.strip()
