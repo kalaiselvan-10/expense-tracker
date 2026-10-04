@@ -1,5 +1,6 @@
 """Load raw transaction CSVs and normalize them to the standard schema."""
 
+import io
 import logging
 import re
 from pathlib import Path
@@ -9,6 +10,7 @@ import pandas as pd
 logger = logging.getLogger(__name__)
 
 REQUIRED_COLUMNS = ["date", "description", "amount"]
+ENCODINGS = ("utf-8-sig", "cp1252", "latin-1")  # latin-1 accepts any byte, so it is the last resort
 NOISE_TOKENS = {"upi", "pos", "imps", "neft", "txn", "ref"}
 
 
@@ -82,8 +84,33 @@ def clean_transactions(raw: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def read_csv_any_encoding(source) -> pd.DataFrame:
+    """Read a CSV from a path or an uploaded file, whatever encoding Excel saved it in."""
+    if isinstance(source, (str, Path)):
+        data = Path(source).read_bytes()
+    elif hasattr(source, "getvalue"):  # Streamlit upload: safe to read again on every rerun
+        data = source.getvalue()
+    else:
+        data = source.read()
+    if isinstance(data, str):
+        text = data
+    elif data[:2] in (b"\xff\xfe", b"\xfe\xff"):  # UTF-16 (Excel "Unicode Text")
+        text = data.decode("utf-16")
+    else:
+        for encoding in ENCODINGS:
+            try:
+                text = data.decode(encoding)
+                break
+            except UnicodeDecodeError:
+                continue
+        logger.debug("Decoded CSV as %s", encoding)
+    first_line = text.splitlines()[0] if text.strip() else ""
+    separator = ";" if ";" in first_line and "," not in first_line else ","
+    return pd.read_csv(io.StringIO(text), sep=separator)
+
+
 def load_transactions(source) -> pd.DataFrame:
     """Read a CSV (path or file-like object) and return a cleaned DataFrame."""
     if isinstance(source, (str, Path)):
         logger.info("Loading transactions from %s", source)
-    return clean_transactions(pd.read_csv(source))
+    return clean_transactions(read_csv_any_encoding(source))

@@ -1,7 +1,11 @@
+import io
+import tempfile
+from pathlib import Path
+
 import pandas as pd
 
 from expense_tracker.loader import (
-    clean_transactions, normalize_merchant, parse_amount, parse_dates,
+    clean_transactions, load_transactions, normalize_merchant, parse_amount, parse_dates,
 )
 from helpers import sample_df
 
@@ -46,3 +50,27 @@ def test_missing_required_column_raises():
 def test_account_is_optional():
     raw = pd.DataFrame({"date": ["2026-01-01"], "description": ["Uber Trip"], "amount": [-100]})
     assert clean_transactions(raw)["account"].iloc[0] == "Unknown"
+
+
+CSV_TEXT = "date,description,amount,account\n2026-09-02,Caf\u00e9 Coffee \u00f0,-120,HDFC\n14/09/2026,Uber Trip,-250,HDFC\n"
+
+
+def test_reads_non_utf8_files_saved_by_excel():
+    for encoding in ("cp1252", "latin-1", "utf-8-sig", "utf-16"):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "bank.csv"
+            path.write_bytes(CSV_TEXT.encode(encoding))
+            df = load_transactions(path)
+            assert len(df) == 2, encoding
+            assert pd.Timestamp("2026-09-14") in set(df["date"]), encoding
+
+
+def test_reads_uploaded_file_object_more_than_once():
+    upload = io.BytesIO(CSV_TEXT.encode("cp1252"))
+    assert len(load_transactions(upload)) == 2
+    assert len(load_transactions(upload)) == 2  # Streamlit reruns reuse the same upload
+
+
+def test_reads_semicolon_separated_files():
+    text = "date;description;amount\n2026-09-02;Swiggy Order;-450\n"
+    assert len(load_transactions(io.BytesIO(text.encode("utf-8")))) == 1
