@@ -1,5 +1,5 @@
 # Automated Expense Tracker & Analyzer
-
+![Dashboard](docs/dashboard.png)
 A Python application that imports bank/expense CSV files, cleans and categorizes
 transactions, and produces monthly spending insights, budget checks and a
 next-month forecast. It has a command-line interface and a Streamlit dashboard.
