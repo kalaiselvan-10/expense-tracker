@@ -1,0 +1,15 @@
+{
+  "paths": {
+    "transactions": "data/labeled_transactions.csv",
+    "sample": "data/sample_transactions.csv",
+    "categories": "categories.json",
+    "budgets": "budgets.json",
+    "corrections": "corrections.csv",
+    "output_dir": "output",
+    "model": "models/category_model.joblib"
+  },
+  "recurring": {"min_months": 2, "tolerance": 0.10},
+  "forecast": {"window": 3},
+  "model": {"min_confidence": 0.40},
+  "logging": {"level": "INFO", "file": "logs/expense_tracker.log"}
+}

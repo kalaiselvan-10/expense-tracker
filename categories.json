@@ -1,0 +1,12 @@
+{
+  "Income": ["salary", "interest", "refund", "bonus"],
+  "Rent": ["rent"],
+  "Transport": ["uber", "ola", "petrol", "fuel", "metro", "bus", "auto", "rickshaw"],
+  "Food": ["swiggy", "zomato", "restaurant", "cafe", "biryani", "pizza", "burger"],
+  "Groceries": ["bazaar", "grocery", "groceries", "supermarket", "dmart", "vegetable"],
+  "Bills": ["electricity", "recharge", "water", "internet", "broadband"],
+  "Subscriptions": ["netflix", "spotify", "prime", "hotstar"],
+  "Shopping": ["amazon", "flipkart", "myntra"],
+  "Health": ["pharmacy", "hospital", "clinic", "medplus", "dental"],
+  "Entertainment": ["movie", "cinema", "cinemas", "concert"]
+}
