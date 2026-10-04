@@ -1,0 +1,409 @@
+date,description,amount,account,true_category
+2025-10-01,Salary Credit,50000,HDFC Savings,Income
+2025-10-01,Amazon Purchase,-1986,HDFC Card,Shopping
+2025-10-02,House Rent,-12000,HDFC Savings,Rent
+2025-10-03,Cafe Coffee Day,-253,HDFC Card,Food
+2025-10-03,UPI/897549/City Hospital,-1035,HDFC Savings,Health
+2025-10-04,UPI/103402/Reliance Fresh,-2180,HDFC Card,Groceries
+2025-10-05,NETFLIX SUBSCRIPTION #2679,-649,HDFC Savings,Subscriptions
+2025-10-05,UPI/653306/Concert Pass,-762,HDFC Card,Entertainment
+2025-10-07,Electricity Bill,-2104,HDFC Savings,Bills
+2025-10-07,UPI/201414/Local Restaurant,-254,HDFC Card,Food
+2025-10-07,AUTO RICKSHAW #9179,-724,HDFC Card,Transport
+2025-10-07,Pvr Cinemas,-519,HDFC Card,Entertainment
+2025-10-08,Uber Trip,-726,HDFC Savings,Transport
+2025-10-08,Pharmacy,-446,HDFC Savings,Health
+2025-10-10,UPI/343962/Mobile Recharge,-299,HDFC Savings,Bills
+2025-10-12,Ola Ride,-363,HDFC Savings,Transport
+2025-10-17,Reliance Fresh,-2666,HDFC Savings,Groceries
+2025-10-17,Dmart Supermarket,-2479,HDFC Card,Groceries
+2025-10-18,CAFE COFFEE DAY #5557,-579,HDFC Savings,Food
+2025-10-18,UPI/407419/Zomato Order,-537,HDFC Card,Food
+2025-10-18,Cafe Coffee Day,-317,HDFC Card,Food
+2025-10-18,Croma Electronics,-502,HDFC Card,Shopping
+2025-10-19,UPI/338968/Cafe Coffee Day,-221,HDFC Card,Food
+2025-10-20,Uber Trip,-868,HDFC Card,Transport
+2025-10-21,Local Restaurant,-316,HDFC Savings,Food
+2025-10-21,BUS PASS #6313,-1220,HDFC Savings,Transport
+2025-10-21,METRO CARD RECHARGE #5040,-372,HDFC Card,Transport
+2025-10-22,Biryani House,-223,HDFC Savings,Food
+2025-10-22,Big Bazaar Groceries,-2599,HDFC Card,Groceries
+2025-10-24,Auto Rickshaw,-957,HDFC Card,Transport
+2025-10-25,Dominos Pizza,-582,HDFC Savings,Food
+2025-10-25,UPI/267753/Uber Trip,-304,HDFC Card,Transport
+2025-10-27,UPI/492077/Croma Electronics,-2994,HDFC Savings,Shopping
+2025-10-28,Local Restaurant,-420,HDFC Card,Food
+2025-11-01,Salary Credit,50000,HDFC Card,Income
+2025-11-02,UPI/335612/House Rent,-12000,HDFC Savings,Rent
+2025-11-02,Auto Rickshaw,-244,HDFC Savings,Transport
+2025-11-03,Cafe Coffee Day,-435,HDFC Savings,Food
+2025-11-03,Cafe Coffee Day,-320,HDFC Card,Food
+2025-11-03,Nilgiris Store,-1273,HDFC Savings,Groceries
+2025-11-03,UPI/449759/Concert Pass,-483,HDFC Savings,Entertainment
+2025-11-04,Auto Rickshaw,-584,HDFC Savings,Transport
+2025-11-05,Netflix Subscription,-649,HDFC Savings,Subscriptions
+2025-11-05,BURGER KING #5092,-337,HDFC Savings,Food
+2025-11-05,OLA RIDE #1958,-687,HDFC Savings,Transport
+2025-11-05,Myntra Clothing,-972,HDFC Savings,Shopping
+2025-11-07,ELECTRICITY BILL #2163,-2102,HDFC Savings,Bills
+2025-11-07,Zomato Order,-249,HDFC Card,Food
+2025-11-07,UPI/102260/Burger King,-210,HDFC Card,Food
+2025-11-09,Metro Card Recharge,-664,HDFC Card,Transport
+2025-11-09,Ola Ride,-1451,HDFC Savings,Transport
+2025-11-09,Vegetable Market,-936,HDFC Card,Groceries
+2025-11-09,MEDPLUS #6617,-819,HDFC Savings,Health
+2025-11-10,MOBILE RECHARGE #1514,-299,HDFC Card,Bills
+2025-11-12,Big Bazaar Groceries,-1400,HDFC Savings,Groceries
+2025-11-14,Burger King,-628,HDFC Savings,Food
+2025-11-15,Zomato Order,-201,HDFC Savings,Food
+2025-11-15,UPI/751332/Reliance Fresh,-697,HDFC Savings,Groceries
+2025-11-15,Croma Electronics,-3381,HDFC Savings,Shopping
+2025-11-18,DOMINOS PIZZA #8749,-634,HDFC Card,Food
+2025-11-20,Uber Trip,-1462,HDFC Card,Transport
+2025-11-20,Uber Trip,-938,HDFC Card,Transport
+2025-11-21,Game Store,-365,HDFC Card,Entertainment
+2025-11-22,Zomato Order,-212,HDFC Card,Food
+2025-11-22,Croma Electronics,-1726,HDFC Savings,Shopping
+2025-11-22,Medplus,-717,HDFC Savings,Health
+2025-11-24,UPI/599948/Petrol Pump,-197,HDFC Savings,Transport
+2025-11-26,UPI/662336/Zomato Order,-404,HDFC Card,Food
+2025-12-01,Salary Credit,50000,HDFC Savings,Income
+2025-12-02,UPI/824586/House Rent,-12000,HDFC Savings,Rent
+2025-12-02,Uber Trip,-1301,HDFC Card,Transport
+2025-12-03,Flipkart Order,-3255,HDFC Savings,Shopping
+2025-12-04,Biryani House,-332,HDFC Card,Food
+2025-12-05,Netflix Subscription,-649,HDFC Card,Subscriptions
+2025-12-05,AMAZON PURCHASE #8784,-689,HDFC Savings,Shopping
+2025-12-06,Local Restaurant,-571,HDFC Savings,Food
+2025-12-07,Electricity Bill,-2096,HDFC Card,Bills
+2025-12-09,Dominos Pizza,-260,HDFC Savings,Food
+2025-12-09,UPI/945687/Uber Trip,-973,HDFC Savings,Transport
+2025-12-10,UPI/423232/Mobile Recharge,-299,HDFC Card,Bills
+2025-12-10,UPI/302511/Cafe Coffee Day,-378,HDFC Card,Food
+2025-12-11,Biryani House,-221,HDFC Card,Food
+2025-12-12,Burger King,-308,HDFC Savings,Food
+2025-12-12,Burger King,-699,HDFC Savings,Food
+2025-12-12,Metro Card Recharge,-223,HDFC Card,Transport
+2025-12-13,Nilgiris Store,-401,HDFC Savings,Groceries
+2025-12-14,UPI/704596/Auto Rickshaw,-1127,HDFC Savings,Transport
+2025-12-14,Nilgiris Store,-2884,HDFC Card,Groceries
+2025-12-15,Vegetable Market,-1275,HDFC Savings,Groceries
+2025-12-15,Lifestyle Store,-3079,HDFC Card,Shopping
+2025-12-15,Pvr Cinemas,-675,HDFC Card,Entertainment
+2025-12-16,UPI/821024/City Hospital,-449,HDFC Savings,Health
+2025-12-17,Petrol Pump,-1445,HDFC Card,Transport
+2025-12-20,Petrol Pump,-1438,HDFC Card,Transport
+2025-12-22,Bus Pass,-436,HDFC Card,Transport
+2025-12-22,Big Bazaar Groceries,-1562,HDFC Card,Groceries
+2025-12-23,UPI/540869/Petrol Pump,-1215,HDFC Card,Transport
+2025-12-25,Pharmacy,-997,HDFC Savings,Health
+2025-12-26,SWIGGY ORDER #5088,-516,HDFC Savings,Food
+2025-12-26,Concert Pass,-251,HDFC Savings,Entertainment
+2025-12-28,Dominos Pizza,-331,HDFC Savings,Food
+2025-12-28,UPI/582662/Chai Point,-377,HDFC Card,Food
+2026-01-01,Salary Credit,50000,HDFC Card,Income
+2026-01-01,UPI/479781/Lifestyle Store,-2507,HDFC Card,Shopping
+2026-01-02,House Rent,-12000,HDFC Card,Rent
+2026-01-02,Petrol Pump,-856,HDFC Card,Transport
+2026-01-03,UPI/584125/Bus Pass,-957,HDFC Savings,Transport
+2026-01-03,NILGIRIS STORE #5941,-2969,HDFC Savings,Groceries
+2026-01-05,Netflix Subscription,-649,HDFC Card,Subscriptions
+2026-01-05,Dominos Pizza,-386,HDFC Savings,Food
+2026-01-05,UPI/513160/Auto Rickshaw,-1173,HDFC Savings,Transport
+2026-01-07,Electricity Bill,-1662,HDFC Card,Bills
+2026-01-08,Ola Ride,-1049,HDFC Savings,Transport
+2026-01-09,Chai Point,-229,HDFC Savings,Food
+2026-01-09,Local Restaurant,-477,HDFC Savings,Food
+2026-01-09,Concert Pass,-449,HDFC Card,Entertainment
+2026-01-10,Mobile Recharge,-299,HDFC Savings,Bills
+2026-01-10,Burger King,-579,HDFC Savings,Food
+2026-01-11,PETROL PUMP #7906,-856,HDFC Card,Transport
+2026-01-12,UPI/783414/Ola Ride,-1411,HDFC Savings,Transport
+2026-01-13,Swiggy Order,-539,HDFC Card,Food
+2026-01-13,Local Restaurant,-564,HDFC Card,Food
+2026-01-15,UPI/736745/Reliance Fresh,-1910,HDFC Savings,Groceries
+2026-01-16,Cafe Coffee Day,-429,HDFC Savings,Food
+2026-01-18,UPI/973349/Chai Point,-575,HDFC Card,Food
+2026-01-19,Vegetable Market,-2024,HDFC Savings,Groceries
+2026-01-20,Dental Care,-993,HDFC Card,Health
+2026-01-22,Myntra Clothing,-782,HDFC Card,Shopping
+2026-01-23,Cafe Coffee Day,-215,HDFC Card,Food
+2026-01-23,UPI/647091/Apollo Clinic,-645,HDFC Card,Health
+2026-01-25,UPI/121369/Uber Trip,-586,HDFC Savings,Transport
+2026-01-25,UPI/126925/Dmart Supermarket,-1674,HDFC Card,Groceries
+2026-01-26,Croma Electronics,-668,HDFC Card,Shopping
+2026-01-27,Biryani House,-683,HDFC Savings,Food
+2026-01-27,UPI/665621/Uber Trip,-1043,HDFC Savings,Transport
+2026-01-27,Game Store,-530,HDFC Savings,Entertainment
+2026-02-01,Salary Credit,50000,HDFC Card,Income
+2026-02-01,Vegetable Market,-2245,HDFC Card,Groceries
+2026-02-02,House Rent,-12000,HDFC Savings,Rent
+2026-02-03,Cafe Coffee Day,-566,HDFC Savings,Food
+2026-02-03,Biryani House,-376,HDFC Savings,Food
+2026-02-03,Flipkart Order,-1583,HDFC Savings,Shopping
+2026-02-04,DOMINOS PIZZA #8933,-346,HDFC Card,Food
+2026-02-05,Netflix Subscription,-649,HDFC Card,Subscriptions
+2026-02-05,Ola Ride,-1232,HDFC Savings,Transport
+2026-02-07,Electricity Bill,-1764,HDFC Card,Bills
+2026-02-08,Local Restaurant,-333,HDFC Savings,Food
+2026-02-08,Uber Trip,-1222,HDFC Savings,Transport
+2026-02-09,Swiggy Order,-205,HDFC Savings,Food
+2026-02-09,Metro Card Recharge,-313,HDFC Card,Transport
+2026-02-10,Mobile Recharge,-299,HDFC Savings,Bills
+2026-02-10,Local Restaurant,-634,HDFC Card,Food
+2026-02-10,UPI/301939/Biryani House,-386,HDFC Card,Food
+2026-02-10,Auto Rickshaw,-958,HDFC Savings,Transport
+2026-02-10,BIG BAZAAR GROCERIES #5632,-1348,HDFC Card,Groceries
+2026-02-14,Local Restaurant,-510,HDFC Card,Food
+2026-02-14,AMAZON PURCHASE #3441,-2730,HDFC Card,Shopping
+2026-02-16,Metro Card Recharge,-982,HDFC Savings,Transport
+2026-02-16,Uber Trip,-1261,HDFC Savings,Transport
+2026-02-17,UPI/141797/Concert Pass,-648,HDFC Card,Entertainment
+2026-02-20,Big Bazaar Groceries,-1251,HDFC Card,Groceries
+2026-02-20,DENTAL CARE #3037,-1143,HDFC Card,Health
+2026-02-21,Metro Card Recharge,-290,HDFC Card,Transport
+2026-02-22,BIG BAZAAR GROCERIES #2229,-1043,HDFC Savings,Groceries
+2026-02-23,Chai Point,-652,HDFC Savings,Food
+2026-02-23,Medplus,-916,HDFC Card,Health
+2026-02-24,Biryani House,-252,HDFC Card,Food
+2026-02-24,GAME STORE #2496,-818,HDFC Savings,Entertainment
+2026-02-25,Auto Rickshaw,-859,HDFC Card,Transport
+2026-02-27,UPI/931131/Flipkart Order,-792,HDFC Card,Shopping
+2026-03-01,Salary Credit,50000,HDFC Savings,Income
+2026-03-02,House Rent,-12000,HDFC Card,Rent
+2026-03-03,Ola Ride,-312,HDFC Savings,Transport
+2026-03-03,City Hospital,-1000,HDFC Card,Health
+2026-03-05,Netflix Subscription,-649,HDFC Savings,Subscriptions
+2026-03-07,Electricity Bill,-1981,HDFC Card,Bills
+2026-03-07,Biryani House,-284,HDFC Card,Food
+2026-03-07,Auto Rickshaw,-1120,HDFC Savings,Transport
+2026-03-09,Local Restaurant,-268,HDFC Card,Food
+2026-03-10,Mobile Recharge,-299,HDFC Savings,Bills
+2026-03-10,Burger King,-187,HDFC Card,Food
+2026-03-11,Auto Rickshaw,-627,HDFC Card,Transport
+2026-03-11,Nilgiris Store,-2625,HDFC Card,Groceries
+2026-03-11,UPI/171744/Concert Pass,-754,HDFC Savings,Entertainment
+2026-03-12,Burger King,-491,HDFC Savings,Food
+2026-03-16,Ola Ride,-1015,HDFC Card,Transport
+2026-03-16,Amazon Purchase,-1017,HDFC Card,Shopping
+2026-03-17,Local Restaurant,-660,HDFC Savings,Food
+2026-03-17,Bus Pass,-639,HDFC Card,Transport
+2026-03-19,Burger King,-653,HDFC Card,Food
+2026-03-20,UPI/444525/Concert Pass,-865,HDFC Card,Entertainment
+2026-03-21,Ola Ride,-1100,HDFC Card,Transport
+2026-03-23,UPI/760626/Chai Point,-274,HDFC Savings,Food
+2026-03-23,Dominos Pizza,-468,HDFC Card,Food
+2026-03-23,Lifestyle Store,-2081,HDFC Savings,Shopping
+2026-03-24,Petrol Pump,-1282,HDFC Card,Transport
+2026-03-24,Apollo Clinic,-619,HDFC Savings,Health
+2026-03-28,Dominos Pizza,-487,HDFC Card,Food
+2026-03-28,Swiggy Order,-623,HDFC Savings,Food
+2026-03-28,Uber Trip,-645,HDFC Card,Transport
+2026-03-28,Dmart Supermarket,-2229,HDFC Card,Groceries
+2026-03-28,Dmart Supermarket,-1378,HDFC Savings,Groceries
+2026-03-28,Vegetable Market,-578,HDFC Card,Groceries
+2026-03-28,UPI/579123/Amazon Purchase,-2303,HDFC Savings,Shopping
+2026-04-01,Salary Credit,50000,HDFC Card,Income
+2026-04-01,Swiggy Order,-482,HDFC Card,Food
+2026-04-02,House Rent,-12000,HDFC Savings,Rent
+2026-04-02,Auto Rickshaw,-827,HDFC Savings,Transport
+2026-04-02,Pharmacy,-511,HDFC Savings,Health
+2026-04-03,Chai Point,-503,HDFC Card,Food
+2026-04-03,VEGETABLE MARKET #3024,-457,HDFC Card,Groceries
+2026-04-04,UPI/688678/Flipkart Order,-2431,HDFC Card,Shopping
+2026-04-04,UPI/575679/Pvr Cinemas,-750,HDFC Card,Entertainment
+2026-04-05,Netflix Subscription,-649,HDFC Savings,Subscriptions
+2026-04-07,Electricity Bill,-2148,HDFC Savings,Bills
+2026-04-07,UPI/499889/Burger King,-644,HDFC Card,Food
+2026-04-08,Chai Point,-410,HDFC Savings,Food
+2026-04-09,Uber Trip,-1239,HDFC Savings,Transport
+2026-04-10,Mobile Recharge,-299,HDFC Card,Bills
+2026-04-10,UPI/238579/Petrol Pump,-930,HDFC Card,Transport
+2026-04-12,UPI/656968/Local Restaurant,-591,HDFC Card,Food
+2026-04-12,Myntra Clothing,-2894,HDFC Card,Shopping
+2026-04-17,Auto Rickshaw,-638,HDFC Card,Transport
+2026-04-19,UPI/739098/Dominos Pizza,-324,HDFC Card,Food
+2026-04-19,UPI/970357/Biryani House,-452,HDFC Card,Food
+2026-04-20,Cafe Coffee Day,-659,HDFC Savings,Food
+2026-04-20,Bus Pass,-1097,HDFC Card,Transport
+2026-04-20,UPI/963874/Flipkart Order,-3152,HDFC Card,Shopping
+2026-04-21,Burger King,-406,HDFC Card,Food
+2026-04-21,OLA RIDE #3240,-1351,HDFC Savings,Transport
+2026-04-21,Bus Pass,-160,HDFC Card,Transport
+2026-04-22,Concert Pass,-801,HDFC Savings,Entertainment
+2026-04-23,Medplus,-864,HDFC Savings,Health
+2026-04-25,Ola Ride,-1323,HDFC Savings,Transport
+2026-04-25,Dmart Supermarket,-2027,HDFC Card,Groceries
+2026-04-26,Chai Point,-444,HDFC Savings,Food
+2026-04-26,Big Bazaar Groceries,-2318,HDFC Savings,Groceries
+2026-04-27,Vegetable Market,-1608,HDFC Card,Groceries
+2026-05-01,Salary Credit,50000,HDFC Savings,Income
+2026-05-01,Local Restaurant,-393,HDFC Savings,Food
+2026-05-02,House Rent,-12000,HDFC Card,Rent
+2026-05-02,Local Restaurant,-399,HDFC Savings,Food
+2026-05-03,Cafe Coffee Day,-371,HDFC Savings,Food
+2026-05-03,Uber Trip,-739,HDFC Savings,Transport
+2026-05-03,UPI/201255/Big Bazaar Groceries,-749,HDFC Card,Groceries
+2026-05-04,Chai Point,-243,HDFC Savings,Food
+2026-05-04,Bus Pass,-314,HDFC Savings,Transport
+2026-05-04,DENTAL CARE #8900,-719,HDFC Savings,Health
+2026-05-04,GAME STORE #8030,-787,HDFC Savings,Entertainment
+2026-05-05,Netflix Subscription,-649,HDFC Card,Subscriptions
+2026-05-05,Petrol Pump,-1358,HDFC Card,Transport
+2026-05-06,UPI/541409/Biryani House,-203,HDFC Savings,Food
+2026-05-07,Electricity Bill,-1533,HDFC Savings,Bills
+2026-05-10,Mobile Recharge,-299,HDFC Savings,Bills
+2026-05-11,DOMINOS PIZZA #3370,-152,HDFC Savings,Food
+2026-05-13,AUTO RICKSHAW #9282,-1166,HDFC Card,Transport
+2026-05-13,Vegetable Market,-789,HDFC Card,Groceries
+2026-05-14,Bus Pass,-301,HDFC Card,Transport
+2026-05-14,Vegetable Market,-1335,HDFC Card,Groceries
+2026-05-17,Auto Rickshaw,-303,HDFC Savings,Transport
+2026-05-18,Local Restaurant,-212,HDFC Savings,Food
+2026-05-18,UPI/127032/Biryani House,-328,HDFC Savings,Food
+2026-05-20,Uber Trip,-1429,HDFC Card,Transport
+2026-05-20,UPI/836833/Game Store,-229,HDFC Card,Entertainment
+2026-05-21,Uber Trip,-204,HDFC Card,Transport
+2026-05-22,Reliance Fresh,-1933,HDFC Card,Groceries
+2026-05-22,Amazon Purchase,-2182,HDFC Card,Shopping
+2026-05-24,Zomato Order,-637,HDFC Card,Food
+2026-05-26,UPI/688866/Flipkart Order,-2778,HDFC Card,Shopping
+2026-05-28,Local Restaurant,-251,HDFC Card,Food
+2026-05-28,Amazon Purchase,-1678,HDFC Card,Shopping
+2026-05-28,Pharmacy,-558,HDFC Card,Health
+2026-06-01,Salary Credit,50000,HDFC Card,Income
+2026-06-01,Cafe Coffee Day,-458,HDFC Savings,Food
+2026-06-02,UPI/250210/House Rent,-12000,HDFC Card,Rent
+2026-06-02,Cafe Coffee Day,-554,HDFC Savings,Food
+2026-06-02,UPI/996840/Myntra Clothing,-1675,HDFC Savings,Shopping
+2026-06-03,METRO CARD RECHARGE #7560,-296,HDFC Savings,Transport
+2026-06-05,UPI/876962/Netflix Subscription,-649,HDFC Savings,Subscriptions
+2026-06-07,Electricity Bill,-1593,HDFC Savings,Bills
+2026-06-08,BIG BAZAAR GROCERIES #3842,-999,HDFC Savings,Groceries
+2026-06-10,Mobile Recharge,-299,HDFC Card,Bills
+2026-06-10,UPI/440544/Uber Trip,-909,HDFC Savings,Transport
+2026-06-11,Dominos Pizza,-528,HDFC Card,Food
+2026-06-12,BURGER KING #8972,-263,HDFC Card,Food
+2026-06-13,PETROL PUMP #3754,-775,HDFC Savings,Transport
+2026-06-14,Uber Trip,-1021,HDFC Card,Transport
+2026-06-15,Nilgiris Store,-2773,HDFC Card,Groceries
+2026-06-15,Myntra Clothing,-1625,HDFC Card,Shopping
+2026-06-15,UPI/734394/Dental Care,-867,HDFC Card,Health
+2026-06-16,CHAI POINT #9394,-574,HDFC Savings,Food
+2026-06-16,UPI/658453/Burger King,-329,HDFC Savings,Food
+2026-06-17,Local Restaurant,-223,HDFC Savings,Food
+2026-06-17,Bus Pass,-313,HDFC Savings,Transport
+2026-06-17,Amazon Purchase,-1771,HDFC Savings,Shopping
+2026-06-17,Pvr Cinemas,-263,HDFC Card,Entertainment
+2026-06-19,Metro Card Recharge,-1254,HDFC Card,Transport
+2026-06-20,Dental Care,-719,HDFC Savings,Health
+2026-06-22,Zomato Order,-428,HDFC Card,Food
+2026-06-23,Movie Tickets,-716,HDFC Savings,Entertainment
+2026-06-25,UPI/891083/Zomato Order,-203,HDFC Savings,Food
+2026-06-25,Biryani House,-446,HDFC Savings,Food
+2026-06-25,Petrol Pump,-799,HDFC Savings,Transport
+2026-06-25,Big Bazaar Groceries,-1125,HDFC Card,Groceries
+2026-06-26,Auto Rickshaw,-1022,HDFC Card,Transport
+2026-06-28,Reliance Fresh,-1018,HDFC Card,Groceries
+2026-07-01,SALARY CREDIT #8172,50000,HDFC Card,Income
+2026-07-02,House Rent,-12000,HDFC Savings,Rent
+2026-07-02,Vegetable Market,-2456,HDFC Card,Groceries
+2026-07-03,UPI/203896/Reliance Fresh,-1319,HDFC Card,Groceries
+2026-07-03,AMAZON PURCHASE #3449,-1548,HDFC Card,Shopping
+2026-07-03,Pharmacy,-1056,HDFC Savings,Health
+2026-07-04,Myntra Clothing,-1473,HDFC Savings,Shopping
+2026-07-05,Netflix Subscription,-649,HDFC Card,Subscriptions
+2026-07-06,UPI/362147/Ola Ride,-1318,HDFC Savings,Transport
+2026-07-07,Electricity Bill,-1896,HDFC Card,Bills
+2026-07-07,UPI/410160/Cafe Coffee Day,-290,HDFC Savings,Food
+2026-07-08,Auto Rickshaw,-569,HDFC Card,Transport
+2026-07-08,Vegetable Market,-1831,HDFC Card,Groceries
+2026-07-08,City Hospital,-854,HDFC Card,Health
+2026-07-08,Concert Pass,-391,HDFC Savings,Entertainment
+2026-07-10,Mobile Recharge,-299,HDFC Savings,Bills
+2026-07-10,Biryani House,-303,HDFC Savings,Food
+2026-07-10,Burger King,-486,HDFC Savings,Food
+2026-07-10,Dominos Pizza,-369,HDFC Card,Food
+2026-07-12,UPI/843266/Biryani House,-551,HDFC Savings,Food
+2026-07-15,Auto Rickshaw,-663,HDFC Card,Transport
+2026-07-15,Petrol Pump,-862,HDFC Card,Transport
+2026-07-15,Auto Rickshaw,-381,HDFC Savings,Transport
+2026-07-17,Swiggy Order,-494,HDFC Savings,Food
+2026-07-20,UPI/971728/Burger King,-307,HDFC Savings,Food
+2026-07-21,Burger King,-670,HDFC Card,Food
+2026-07-21,Metro Card Recharge,-840,HDFC Savings,Transport
+2026-07-21,PVR CINEMAS #1025,-347,HDFC Card,Entertainment
+2026-07-23,AUTO RICKSHAW #3626,-335,HDFC Card,Transport
+2026-07-23,Flipkart Order,-3389,HDFC Savings,Shopping
+2026-07-24,Chai Point,-194,HDFC Savings,Food
+2026-07-26,Local Restaurant,-217,HDFC Card,Food
+2026-07-26,UPI/970068/Dmart Supermarket,-963,HDFC Card,Groceries
+2026-07-27,Ola Ride,-833,HDFC Card,Transport
+2026-08-01,Salary Credit,50000,HDFC Card,Income
+2026-08-01,Ola Ride,-1324,HDFC Card,Transport
+2026-08-02,UPI/651613/House Rent,-12000,HDFC Savings,Rent
+2026-08-02,Local Restaurant,-467,HDFC Card,Food
+2026-08-02,OLA RIDE #7001,-217,HDFC Card,Transport
+2026-08-03,CHAI POINT #1717,-187,HDFC Savings,Food
+2026-08-03,Bus Pass,-1385,HDFC Savings,Transport
+2026-08-05,Netflix Subscription,-649,HDFC Card,Subscriptions
+2026-08-05,Swiggy Order,-510,HDFC Savings,Food
+2026-08-07,Electricity Bill,-1544,HDFC Card,Bills
+2026-08-07,Pvr Cinemas,-442,HDFC Savings,Entertainment
+2026-08-08,Big Bazaar Groceries,-506,HDFC Card,Groceries
+2026-08-09,SWIGGY ORDER #1783,-345,HDFC Card,Food
+2026-08-09,Zomato Order,-526,HDFC Card,Food
+2026-08-10,MOBILE RECHARGE #1266,-299,HDFC Card,Bills
+2026-08-10,Metro Card Recharge,-1314,HDFC Savings,Transport
+2026-08-12,Reliance Fresh,-2218,HDFC Savings,Groceries
+2026-08-13,Auto Rickshaw,-146,HDFC Card,Transport
+2026-08-15,Flipkart Order,-3421,HDFC Savings,Shopping
+2026-08-16,Chai Point,-526,HDFC Card,Food
+2026-08-17,Reliance Fresh,-2030,HDFC Card,Groceries
+2026-08-17,UPI/912609/Vegetable Market,-2700,HDFC Card,Groceries
+2026-08-18,UPI/443848/Petrol Pump,-737,HDFC Card,Transport
+2026-08-18,Dental Care,-497,HDFC Savings,Health
+2026-08-20,Metro Card Recharge,-642,HDFC Savings,Transport
+2026-08-23,Metro Card Recharge,-799,HDFC Card,Transport
+2026-08-23,Lifestyle Store,-1378,HDFC Card,Shopping
+2026-08-23,UPI/994253/Lifestyle Store,-1319,HDFC Savings,Shopping
+2026-08-23,Pvr Cinemas,-570,HDFC Savings,Entertainment
+2026-08-24,Chai Point,-545,HDFC Savings,Food
+2026-08-26,ZOMATO ORDER #2698,-503,HDFC Card,Food
+2026-08-26,UPI/731718/Zomato Order,-584,HDFC Savings,Food
+2026-08-26,Medplus,-883,HDFC Savings,Health
+2026-08-27,Chai Point,-640,HDFC Savings,Food
+2026-09-01,Salary Credit,50000,HDFC Card,Income
+2026-09-02,House Rent,-12000,HDFC Savings,Rent
+2026-09-05,Netflix Subscription,-649,HDFC Savings,Subscriptions
+2026-09-05,UPI/772124/Biryani House,-696,HDFC Savings,Food
+2026-09-05,UBER TRIP #7293,-183,HDFC Card,Transport
+2026-09-05,Myntra Clothing,-3479,HDFC Card,Shopping
+2026-09-05,Movie Tickets,-603,HDFC Card,Entertainment
+2026-09-06,Metro Card Recharge,-931,HDFC Savings,Transport
+2026-09-07,Electricity Bill,-1567,HDFC Card,Bills
+2026-09-07,Dmart Supermarket,-2440,HDFC Card,Groceries
+2026-09-08,BUS PASS #2195,-911,HDFC Savings,Transport
+2026-09-08,Ola Ride,-750,HDFC Card,Transport
+2026-09-08,Dmart Supermarket,-2789,HDFC Savings,Groceries
+2026-09-10,Mobile Recharge,-299,HDFC Card,Bills
+2026-09-10,Vegetable Market,-2847,HDFC Card,Groceries
+2026-09-10,Croma Electronics,-533,HDFC Card,Shopping
+2026-09-11,Cafe Coffee Day,-504,HDFC Card,Food
+2026-09-11,Auto Rickshaw,-374,HDFC Card,Transport
+2026-09-11,UPI/571435/Ola Ride,-1035,HDFC Savings,Transport
+2026-09-12,UPI/689107/Amazon Purchase,-2140,HDFC Savings,Shopping
+2026-09-12,UPI/628750/Dental Care,-495,HDFC Card,Health
+2026-09-15,Chai Point,-679,HDFC Savings,Food
+2026-09-16,BUS PASS #5949,-1197,HDFC Card,Transport
+2026-09-16,UPI/512344/Reliance Fresh,-2437,HDFC Card,Groceries
+2026-09-18,UPI/633853/Game Store,-347,HDFC Card,Entertainment
+2026-09-19,Dominos Pizza,-325,HDFC Card,Food
+2026-09-21,Cafe Coffee Day,-576,HDFC Savings,Food
+2026-09-24,UPI/488539/Petrol Pump,-896,HDFC Savings,Transport
+2026-09-25,Dominos Pizza,-593,HDFC Savings,Food
+2026-09-25,Dental Care,-486,HDFC Savings,Health
+2026-09-27,Zomato Order,-278,HDFC Savings,Food
+2026-09-27,UPI/272655/Zomato Order,-680,HDFC Savings,Food
+2026-09-27,UPI/772612/Swiggy Order,-179,HDFC Card,Food
+2026-09-28,UPI/677599/Zomato Order,-406,HDFC Card,Food
