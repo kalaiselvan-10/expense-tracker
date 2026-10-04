@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-app = ["streamlit>=1.30", "fastapi>=0.100", "uvicorn>=0.23", "httpx>=0.25"]
+app = ["streamlit>=1.30"]
 dev = ["pytest>=7.4"]
 
 [project.scripts]

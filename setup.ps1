@@ -17,4 +17,3 @@ Write-Host "`n== Generating the report ==" -ForegroundColor Cyan
 Write-Host "`nDone. Next:" -ForegroundColor Green
 Write-Host "  .\.venv\Scripts\activate"
 Write-Host "  streamlit run app/streamlit_app.py"
-Write-Host "  uvicorn expense_tracker.api:app --reload"

@@ -2,8 +2,7 @@
 
 A Python application that imports bank/expense CSV files, cleans and categorizes
 transactions, and produces monthly spending insights, budget checks and a
-next-month forecast. It has a command-line interface, a Streamlit dashboard and
-a FastAPI layer.
+next-month forecast. It has a command-line interface and a Streamlit dashboard.
 
 ## How it meets the brief
 
@@ -15,13 +14,13 @@ a FastAPI layer.
 | Manual corrections | `corrections.csv`, `expense-tracker correct`, dashboard Corrections tab |
 | Monthly totals, category shares, recurring expenses, budget variance | `analysis.py` + `budgets.json` |
 | Charts / reports and cleaned-dataset export | `reports.py` -> `output/` (4 PNG charts, `report.md`, `clean_transactions.csv`) |
-| Tests | `tests/` (33 tests) |
+| Tests | `tests/` (29 tests) |
 | Logging | `config.py` (console + `logs/expense_tracker.log`) |
 | Configuration | `config.json`, `categories.json`, `budgets.json` |
 | CLI or Streamlit | both: `cli.py`, `app/streamlit_app.py` |
 | Python data prep and modeling | `model.py` (TF-IDF + logistic regression), `forecast.py` (moving average + backtest) |
 | Git/GitHub | one commit per stage; see the history with `git log --oneline` |
-| Streamlit / API layer | `app/streamlit_app.py`, `src/expense_tracker/api.py` |
+| Streamlit interface | `app/streamlit_app.py` |
 
 ## Quick start (Windows PowerShell)
 
@@ -35,7 +34,6 @@ generates a report. Then:
 ```powershell
 .\.venv\Scripts\activate
 streamlit run app/streamlit_app.py            # dashboard  http://localhost:8501
-uvicorn expense_tracker.api:app --reload      # API docs   http://127.0.0.1:8000/docs
 ```
 
 Mac/Linux: `python -m venv .venv && source .venv/bin/activate && pip install -e ".[app,dev]"`.
@@ -72,7 +70,6 @@ src/expense_tracker/
   pipeline.py     wires the steps together
   reports.py      charts, export, Markdown report
   cli.py          command line
-  api.py          FastAPI endpoints
 app/streamlit_app.py   dashboard
 scripts/generate_data.py   builds the synthetic labeled dataset
 tests/                 pytest suite
