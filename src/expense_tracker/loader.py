@@ -1,5 +1,6 @@
 """Load raw transaction CSVs and normalize them to the standard schema."""
 
+import csv
 import io
 import logging
 import re
@@ -84,6 +85,35 @@ def clean_transactions(raw: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def _repair_row(fields: list[str], header: list[str]):
+    """Fix a row with too many fields (an unquoted comma). Return None to skip it.
+
+    Two common causes: a comma inside the description ('Swiggy, Bangalore') or a
+    thousands separator in the amount ('-1,299'). Anything else is skipped.
+    """
+    names = [h.strip().lower() for h in header]
+    extra = len(fields) - len(header)
+    desc = names.index("description") if "description" in names else None
+    amt = names.index("amount") if "amount" in names else None
+
+    def amount_ok(row):
+        return amt is None or not pd.isna(parse_amount(row[amt]))
+
+    if amt is not None and amt + extra < len(fields):  # '-1' + '299' -> '-1299'
+        head, tail = fields[amt].strip(), fields[amt + 1 : amt + extra + 1]
+        if re.fullmatch(r"[-(₹]?\s*(rs\.?)?\s*\d{1,3}", head, flags=re.I) and all(
+            re.fullmatch(r"\d{3}(\.\d+)?\)?", t.strip()) for t in tail
+        ):
+            row = fields[:amt] + ["".join([head, *tail])] + fields[amt + extra + 1 :]
+            if amount_ok(row):
+                return row
+    if desc is not None:  # 'Swiggy' + 'Bangalore' -> 'Swiggy, Bangalore'
+        row = fields[:desc] + [", ".join(fields[desc : desc + extra + 1])] + fields[desc + extra + 1 :]
+        if amount_ok(row):
+            return row
+    return None
+
+
 def read_csv_any_encoding(source) -> pd.DataFrame:
     """Read a CSV from a path or an uploaded file, whatever encoding Excel saved it in."""
     if isinstance(source, (str, Path)):
@@ -106,7 +136,26 @@ def read_csv_any_encoding(source) -> pd.DataFrame:
         logger.debug("Decoded CSV as %s", encoding)
     first_line = text.splitlines()[0] if text.strip() else ""
     separator = ";" if ";" in first_line and "," not in first_line else ","
-    return pd.read_csv(io.StringIO(text), sep=separator)
+
+    rows = [row for row in csv.reader(io.StringIO(text), delimiter=separator) if row]
+    if not rows:
+        return pd.read_csv(io.StringIO(text))  # raises a clear "no data" error
+    header, body = rows[0], rows[1:]
+    if all(len(row) <= len(header) for row in body):
+        return pd.read_csv(io.StringIO(text), sep=separator)
+
+    # Some rows have too many fields: repair them ourselves (pandas would misalign columns).
+    fixed, repaired, skipped = [], 0, 0
+    for row in body:
+        if len(row) > len(header):
+            row = _repair_row(row, header)
+            if row is None:
+                skipped += 1
+                continue
+            repaired += 1
+        fixed.append(row + [""] * (len(header) - len(row)))
+    logger.warning("CSV had malformed rows: repaired %d, skipped %d", repaired, skipped)
+    return pd.DataFrame(fixed, columns=header)
 
 
 def load_transactions(source) -> pd.DataFrame:

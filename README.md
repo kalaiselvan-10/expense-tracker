@@ -14,7 +14,7 @@ next-month forecast. It has a command-line interface and a Streamlit dashboard.
 | Manual corrections | `corrections.csv`, `expense-tracker correct`, dashboard Corrections tab |
 | Monthly totals, category shares, recurring expenses, budget variance | `analysis.py` + `budgets.json` |
 | Charts / reports and cleaned-dataset export | `reports.py` -> `output/` (4 PNG charts, `report.md`, `clean_transactions.csv`) |
-| Tests | `tests/` (32 tests) |
+| Tests | `tests/` (35 tests) |
 | Logging | `config.py` (console + `logs/expense_tracker.log`) |
 | Configuration | `config.json`, `categories.json`, `budgets.json` |
 | CLI or Streamlit | both: `cli.py`, `app/streamlit_app.py` |
@@ -55,7 +55,8 @@ expense-tracker forecast                     # next-month forecast + backtest er
 
 A CSV with columns `date, description, amount` (and optionally `account`).
 Expenses are negative, income is positive. Mixed date formats, duplicates, Excel encodings (UTF-8, Windows-1252, UTF-16) and
-semicolon-separated files are handled. Replace the file named in `config.json` or upload it in the dashboard.
+semicolon-separated files and
+rows broken by unquoted commas (`Swiggy, Bangalore`, `-1,299`) are handled. Replace the file named in `config.json` or upload it in the dashboard.
 
 ## Project structure
 

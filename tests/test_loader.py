@@ -74,3 +74,29 @@ def test_reads_uploaded_file_object_more_than_once():
 def test_reads_semicolon_separated_files():
     text = "date;description;amount\n2026-09-02;Swiggy Order;-450\n"
     assert len(load_transactions(io.BytesIO(text.encode("utf-8")))) == 1
+
+
+def test_repairs_unquoted_comma_in_description():
+    text = ("date,description,amount,account\n"
+            "2026-09-02,Swiggy, Bangalore,-450,HDFC\n"
+            "2026-09-03,Uber Trip,-250,HDFC\n")
+    df = load_transactions(io.BytesIO(text.encode()))
+    assert len(df) == 2
+    assert df.loc[0, "description"] == "Swiggy Bangalore" and df.loc[0, "amount"] == -450
+
+
+def test_repairs_unquoted_thousands_separator_in_amount():
+    text = ("date,description,amount,account\n"
+            "2026-09-02,Big Bazaar,-1,299,HDFC\n"
+            "2026-09-03,Uber Trip,-250,HDFC\n")
+    df = load_transactions(io.BytesIO(text.encode()))
+    assert sorted(df["amount"]) == [-1299, -250]
+
+
+def test_unrepairable_rows_are_skipped_not_fatal():
+    text = ("date,description,amount,account\n"
+            "2026-09-02,Uber Trip,-250,HDFC\n"
+            ",,,,\n"
+            "2026-09-03,Total,abc,xyz,extra\n")
+    df = load_transactions(io.BytesIO(text.encode()))
+    assert len(df) == 1 and df.loc[0, "description"] == "Uber Trip"
