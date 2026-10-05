@@ -100,3 +100,23 @@ def test_unrepairable_rows_are_skipped_not_fatal():
             "2026-09-03,Total,abc,xyz,extra\n")
     df = load_transactions(io.BytesIO(text.encode()))
     assert len(df) == 1 and df.loc[0, "description"] == "Uber Trip"
+
+
+def test_reads_old_mac_and_mixed_line_endings():
+    body = ["date,description,amount,account",
+            "2026-09-02,Swiggy Order,-450,HDFC",
+            "14/09/2026,Uber Trip,-250,HDFC"]
+    for newline in ("\r", "\r\n", "\n"):
+        df = load_transactions(io.BytesIO(newline.join(body).encode()))
+        assert len(df) == 2, repr(newline)
+    mixed = "date,description,amount\r2026-09-02,Swiggy Order,-450\r\n2026-09-03,Uber Trip,-250\n"
+    assert len(load_transactions(io.BytesIO(mixed.encode()))) == 2
+
+
+def test_unreadable_file_gives_a_value_error_not_a_crash():
+    try:
+        load_transactions(io.BytesIO(b""))
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("expected ValueError")

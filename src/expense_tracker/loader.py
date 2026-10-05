@@ -134,10 +134,14 @@ def read_csv_any_encoding(source) -> pd.DataFrame:
             except UnicodeDecodeError:
                 continue
         logger.debug("Decoded CSV as %s", encoding)
+    text = text.replace("\x00", "").replace("\r\n", "\n").replace("\r", "\n")  # any line ending
     first_line = text.splitlines()[0] if text.strip() else ""
     separator = ";" if ";" in first_line and "," not in first_line else ","
 
-    rows = [row for row in csv.reader(io.StringIO(text), delimiter=separator) if row]
+    try:
+        rows = [row for row in csv.reader(io.StringIO(text), delimiter=separator) if row]
+    except csv.Error as error:
+        raise ValueError(f"The file does not look like a valid CSV ({error})") from error
     if not rows:
         return pd.read_csv(io.StringIO(text))  # raises a clear "no data" error
     header, body = rows[0], rows[1:]
